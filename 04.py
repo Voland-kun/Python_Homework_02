@@ -21,6 +21,7 @@ def get_list_product(user_list):
     data = open('position.txt', 'r')
     for line in data:
         product *= user_list[int(line)]
+    data.close()
     return product
 
 num = input_int()
